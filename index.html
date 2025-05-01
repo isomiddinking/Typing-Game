@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Typing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1>Typing Game</h1>
+      <div class="controls">
+        <label for="time">Vaqtni tanlang:</label>
+        <select id="time">
+          <option value="15">15 soniya</option>
+          <option value="30">30 soniya</option>
+          <option value="60">60 soniya</option>
+        </select>
+        <button id="start">Boshlash</button>
+      </div>
+      <div id="timer">Qolgan vaqt: 0s</div>
+      <div id="word-display" class="hidden"></div>
+      <input type="text" id="input" class="hidden" placeholder="Bu yerga yozing" autocomplete="off" />
+      <div class="stats">
+        <p>Xatolar: <span id="errors">0</span></p>
+        <p>To'g'ri so'zlar: <span id="correct">0</span></p>
+        <p>Umumiy ball: <span id="score">0</span>%</p>
+        <p>So'zlar Minutiga: <span id="wpm">0</span></p>
+      </div>
+      <button id="restart" class="hidden">Qayta boshlash</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  
